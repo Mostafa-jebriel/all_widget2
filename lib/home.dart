@@ -1,6 +1,9 @@
+import 'package:all_widget2/widget/CupertinoContextMenuPage.dart';
 import 'package:all_widget2/widget/ReorderableListView.dart';
+import 'package:all_widget2/widget/Stepper.dart';
 import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:all_widget2/widget/shap_button.dart';
+import 'package:all_widget2/widget/table.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -41,6 +44,16 @@ class _HomeState extends State<Home> {
               ],
             ),
             SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("CupertinoContextMenu",CupertinoContextMenuPage()),
+                buildMaterialButton("table",TablePage()),
+                buildMaterialButton("Stepper",StepperPage()),
+              ],
+            ),
+            SizedBox(height: 10,),
             SizedBox(height: 10,),
             SizedBox(height: 10,),
             SizedBox(height: 10,),
@@ -56,7 +69,7 @@ class _HomeState extends State<Home> {
               Get.to(w);
             },
             child: Text(t),
-            color: Colors.black12,
+            color: Colors.orangeAccent,
             textColor: Colors.white,
             );
   }
