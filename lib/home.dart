@@ -1,5 +1,7 @@
+import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
+import 'package:get/get.dart';
 
 
 class Home extends StatefulWidget {
@@ -79,7 +81,7 @@ class _HomeState extends State<Home> {
             ),
           ),
               SizedBox(height: 20,),
-
+              buildMaterialButton("Long Press Draggable",LongPressDraggablePage()),
               SizedBox(height: 20,),
               SizedBox(height: 20,),
               SizedBox(height: 20,),
@@ -93,5 +95,16 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
+  }
+
+  MaterialButton buildMaterialButton(t,w) {
+    return MaterialButton(
+              onPressed: (){
+              Get.to(w);
+            },
+            child: Text(t),
+            color: Colors.black12,
+            textColor: Colors.white,
+            );
   }
 }
