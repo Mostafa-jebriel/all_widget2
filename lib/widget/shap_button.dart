@@ -1,4 +1,5 @@
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
 
@@ -19,11 +20,7 @@ class _ShapButtonState extends State<ShapButton> {
     Offset o=isb?Offset(10,10):Offset(28,28);
     double b=isb?5.0:30.0;
     return Scaffold(
-      appBar: AppBar(
-        title: Text("ShapButton"),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: Appbar("ShapButton"),
       body: Center(
         child: Column(
           children: [

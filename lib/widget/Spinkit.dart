@@ -1,3 +1,4 @@
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 class SpinkitPage extends StatefulWidget {
@@ -10,11 +11,7 @@ class _SpinkitPageState extends State<SpinkitPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Spinkit"),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: Appbar("Spinkit"),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

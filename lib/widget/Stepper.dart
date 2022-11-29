@@ -1,6 +1,7 @@
 
 
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 
 class StepperPage extends StatefulWidget {
@@ -15,10 +16,7 @@ class _StepperPageState extends State<StepperPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("StepperPage"),
-        centerTitle: true,
-      ),
+      appBar: Appbar("Stepper"),
       body: Center(
         child:Stepper(
           steps: [

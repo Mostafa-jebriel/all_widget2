@@ -1,5 +1,6 @@
 
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 
 class TablePage extends StatefulWidget {
@@ -13,10 +14,7 @@ class _TableState extends State<TablePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Table"),
-        centerTitle: true,
-      ),
+      appBar: Appbar("table"),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,9 +14,7 @@ class _MyHomePageState extends State<Table2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Table2"),
-      ),
+      appBar: Appbar("table"),
       body: Column(
         children: [
           PaginatedDataTable(

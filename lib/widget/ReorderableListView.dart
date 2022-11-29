@@ -1,5 +1,6 @@
 
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 
 class ReorderableListViewPage extends StatefulWidget {
@@ -12,11 +13,7 @@ class _ReorderableListViewState extends State<ReorderableListViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Reorderable ListView"),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: Appbar("Reorderable ListView"),
       body: ReorderableListView(
         children:  List.generate(number.length,
                 (index) => ListTile(

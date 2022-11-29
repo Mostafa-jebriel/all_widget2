@@ -1,8 +1,9 @@
-import 'package:all_widget2/Spinkit.dart';
+import 'package:all_widget2/widget/Spinkit.dart';
 import 'package:all_widget2/widget/CupertinoContextMenuPage.dart';
 import 'package:all_widget2/widget/ReorderableListView.dart';
 import 'package:all_widget2/widget/Stepper.dart';
 import 'package:all_widget2/widget/Transform.dart';
+import 'package:all_widget2/widget/dragtarget.dart';
 import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:all_widget2/widget/shap_button.dart';
 import 'package:all_widget2/widget/table.dart';
@@ -67,8 +68,55 @@ class _HomeState extends State<Home> {
               ],
             ),
             SizedBox(height: 10,),
-            SizedBox(height: 10,),
-            SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("DragTarget",DragTargetPage()),
+
+              ],
+            ),
+            // SizedBox(height: 10,),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   children: [
+            //
+            //   ],
+            // ),
+            // SizedBox(height: 10,),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   children: [
+            //
+            //   ],
+            // ),
+            // SizedBox(height: 10,),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   children: [
+            //
+            //   ],
+            // ),
+            // SizedBox(height: 10,),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   children: [
+            //
+            //   ],
+            // ),
+            // SizedBox(height: 10,),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   children: [
+            //
+            //   ],
+            // ),
+            // SizedBox(height: 10,),
           ],
         ),
       ),

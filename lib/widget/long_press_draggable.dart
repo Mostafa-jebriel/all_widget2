@@ -1,5 +1,6 @@
 
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 
 class LongPressDraggablePage extends StatefulWidget {
@@ -13,11 +14,7 @@ class _LongPressDraggableState extends State<LongPressDraggablePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("LongPressDraggable"),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: Appbar("LongPressDraggable"),
       body: Center(
         child: LayoutBuilder(
           builder: (c,s){

@@ -1,4 +1,5 @@
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,11 +12,7 @@ class _CupertinoContextMenuPageState extends State<CupertinoContextMenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("CupertinoContextMenu"),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: Appbar("CupertinoContextMenu"),
       body: Center(
         child: SizedBox(
           height: 100,

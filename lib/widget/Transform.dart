@@ -2,6 +2,7 @@
 
 import 'dart:math';
 
+import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
 
 class TransformPage extends StatefulWidget {
@@ -16,11 +17,7 @@ class _TransformPageState extends State<TransformPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Transform"),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: Appbar("Transform"),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
