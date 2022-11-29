@@ -3,6 +3,7 @@ import 'package:all_widget2/widget/CupertinoContextMenuPage.dart';
 import 'package:all_widget2/widget/ReorderableListView.dart';
 import 'package:all_widget2/widget/Stepper.dart';
 import 'package:all_widget2/widget/Transform.dart';
+import 'package:all_widget2/widget/animation_getx.dart';
 import 'package:all_widget2/widget/dragtarget.dart';
 import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:all_widget2/widget/shap_button.dart';
@@ -10,6 +11,8 @@ import 'package:all_widget2/widget/table.dart';
 import 'package:all_widget2/widget/table2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'widget/Customerror.dart';
 
 
 class Home extends StatefulWidget {
@@ -73,6 +76,8 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("DragTarget",DragTargetPage()),
+                buildMaterialButton("Custom error widget",CustomError()),
+                buildMaterialButton("Get x Animation",GetXAnimation()),
 
               ],
             ),
