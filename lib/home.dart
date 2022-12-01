@@ -1,3 +1,5 @@
+import 'package:all_widget2/share_widget.dart';
+import 'package:all_widget2/widget/AllWidget.dart';
 import 'package:all_widget2/widget/Spinkit.dart';
 import 'package:all_widget2/widget/CupertinoContextMenuPage.dart';
 import 'package:all_widget2/widget/ReorderableListView.dart';
@@ -6,7 +8,7 @@ import 'package:all_widget2/widget/Transform.dart';
 import 'package:all_widget2/widget/animation_getx.dart';
 import 'package:all_widget2/widget/dragtarget.dart';
 import 'package:all_widget2/widget/long_press_draggable.dart';
-import 'package:all_widget2/widget/shap_button.dart';
+import 'package:all_widget2/widget/all_button.dart';
 import 'package:all_widget2/widget/table.dart';
 import 'package:all_widget2/widget/table2.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +30,7 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("All Widget 2"),
+        title: Text("All Widget"),
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
       ),
@@ -38,14 +40,14 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 20,),
-            Text("All Widget 2",style: TextStyle(fontWeight: FontWeight.bold,
+            Text("All Widget ",style: TextStyle(fontWeight: FontWeight.bold,
             fontSize: 30),),
             SizedBox(height: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                buildMaterialButton("Shap Button",ShapButton()),
+                buildMaterialButton("AllWidget",AllWidget()),
                 buildMaterialButton("Long Press Draggable",LongPressDraggablePage()),
                 buildMaterialButton("Reorderable List View ",ReorderableListViewPage()),
               ],
@@ -86,7 +88,7 @@ class _HomeState extends State<Home> {
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,
             //   children: [
-            //
+            //buildMaterialButton("",()),
             //   ],
             // ),
             // SizedBox(height: 10,),
@@ -94,7 +96,7 @@ class _HomeState extends State<Home> {
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,
             //   children: [
-            //
+            //buildMaterialButton("",()),
             //   ],
             // ),
             // SizedBox(height: 10,),
@@ -102,7 +104,7 @@ class _HomeState extends State<Home> {
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,
             //   children: [
-            //
+            //buildMaterialButton("",()),
             //   ],
             // ),
             // SizedBox(height: 10,),
@@ -110,7 +112,7 @@ class _HomeState extends State<Home> {
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,
             //   children: [
-            //
+            //buildMaterialButton("",()),
             //   ],
             // ),
             // SizedBox(height: 10,),
@@ -118,7 +120,7 @@ class _HomeState extends State<Home> {
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,
             //   children: [
-            //
+            //buildMaterialButton("",()),
             //   ],
             // ),
             // SizedBox(height: 10,),
@@ -128,14 +130,5 @@ class _HomeState extends State<Home> {
     );
   }
 
-  MaterialButton buildMaterialButton(t,w) {
-    return MaterialButton(
-              onPressed: (){
-              Get.to(w);
-            },
-            child: Text(t),
-            color: Colors.orangeAccent,
-            textColor: Colors.white,
-            );
-  }
+
 }

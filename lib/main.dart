@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: Home(),
-
     );
   }
 }
