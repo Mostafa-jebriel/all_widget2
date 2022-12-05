@@ -7,13 +7,13 @@ import 'package:all_widget2/widget/Stepper.dart';
 import 'package:all_widget2/widget/Transform.dart';
 import 'package:all_widget2/widget/animation_getx.dart';
 import 'package:all_widget2/widget/dragtarget.dart';
+import 'package:all_widget2/widget/hero_animations.dart';
 import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:all_widget2/widget/all_button.dart';
 import 'package:all_widget2/widget/table.dart';
 import 'package:all_widget2/widget/table2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'widget/Customerror.dart';
 
 
@@ -23,11 +23,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text("All Widget"),
@@ -83,14 +80,14 @@ class _HomeState extends State<Home> {
 
               ],
             ),
-            // SizedBox(height: 10,),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   crossAxisAlignment: CrossAxisAlignment.center,
-            //   children: [
-            //buildMaterialButton("",()),
-            //   ],
-            // ),
+            SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+               buildMaterialButton("HeroAnimations",HeroAnimations()),
+              ],
+            ),
             // SizedBox(height: 10,),
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

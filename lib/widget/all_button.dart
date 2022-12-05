@@ -1,4 +1,5 @@
 import 'package:all_widget2/share_widget.dart';
+import 'package:all_widget2/widget/FAB.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
@@ -23,6 +24,8 @@ class _AllButtonState extends State<AllButton> {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: 20,),
               GestureDetector(
@@ -73,11 +76,13 @@ class _AllButtonState extends State<AllButton> {
                   ],
                 ),
               ),
+              SizedBox(height: 20,),
 
             ],
           ),
         ),
       ),
+      floatingActionButton: FAB(),
     );
   }
 
@@ -278,3 +283,5 @@ class ArgonButtonExample extends StatelessWidget {
     );
   }
 }
+
+
