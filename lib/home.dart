@@ -1,6 +1,7 @@
 import 'package:all_widget2/pdf/main_pdf.dart';
 import 'package:all_widget2/share_widget.dart';
 import 'package:all_widget2/widget/AllWidget.dart';
+import 'package:all_widget2/widget/Appbars.dart';
 import 'package:all_widget2/widget/Spinkit.dart';
 import 'package:all_widget2/widget/CupertinoContextMenuPage.dart';
 import 'package:all_widget2/widget/ReorderableListView.dart';
@@ -8,6 +9,7 @@ import 'package:all_widget2/widget/Stepper.dart';
 import 'package:all_widget2/widget/Transform.dart';
 import 'package:all_widget2/widget/analog_clock.dart';
 import 'package:all_widget2/widget/animation_getx.dart';
+import 'package:all_widget2/widget/badges.dart';
 import 'package:all_widget2/widget/dragtarget.dart';
 import 'package:all_widget2/widget/easy_stepper.dart';
 import 'package:all_widget2/widget/hero_animations.dart';
@@ -15,9 +17,11 @@ import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:all_widget2/widget/all_button.dart';
 import 'package:all_widget2/widget/table.dart';
 import 'package:all_widget2/widget/table2.dart';
+import 'package:all_widget2/widget/voice_message.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'widget/Customerror.dart';
+import 'widget/syncfusion_flutter_gauges.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -115,20 +119,25 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                buildMaterialButton("AnalogClock ", AnalogClockPage()),
+                buildMaterialButton("Analog Clock ", AnalogClockPage()),
+                buildMaterialButton("Syncfusion ", SyncfusionPage()),
+                buildMaterialButton("Badges  ", BadgesPage()),
               ],
             ),
             SizedBox(
               height: 10,
             ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   crossAxisAlignment: CrossAxisAlignment.center,
-            //   children: [
-            //buildMaterialButton("",()),
-            //   ],
-            // ),
-            // SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("voice message", ChatPage()),
+                buildMaterialButton("ShapeAppBar", ShapeAppBar()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,

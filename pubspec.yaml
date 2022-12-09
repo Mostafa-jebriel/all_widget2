@@ -25,6 +25,10 @@ dependencies:
   open_file: ^3.1.0
   easy_stepper: ^0.1.4+1
   analog_clock: ^0.1.1
+  syncfusion_flutter_gauges: ^20.3.60
+  badges: ^2.0.3
+  voice_message_package: ^0.0.74
+  sizer:
 
 dev_dependencies:
   flutter_test:
