@@ -28,6 +28,9 @@ dependencies:
   syncfusion_flutter_gauges: ^20.3.60
   badges: ^2.0.3
   voice_message_package: ^0.0.74
+  syncfusion_flutter_sliders: ^20.3.60
+  syncfusion_flutter_charts: ^20.3.47
+  slider_side_menu: ^0.1.0
   sizer:
 
 dev_dependencies:

@@ -15,6 +15,8 @@ import 'package:all_widget2/widget/easy_stepper.dart';
 import 'package:all_widget2/widget/hero_animations.dart';
 import 'package:all_widget2/widget/long_press_draggable.dart';
 import 'package:all_widget2/widget/all_button.dart';
+import 'package:all_widget2/widget/slider_side_menu.dart';
+import 'package:all_widget2/widget/syncfusionfluttersliders.dart';
 import 'package:all_widget2/widget/table.dart';
 import 'package:all_widget2/widget/table2.dart';
 import 'package:all_widget2/widget/voice_message.dart';
@@ -133,19 +135,23 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("voice message", ChatPage()),
                 buildMaterialButton("ShapeAppBar", ShapeAppBar()),
+                buildMaterialButton("SliderSideMenu", SliderSideMenuPage()),
               ],
             ),
             SizedBox(
               height: 10,
             ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   crossAxisAlignment: CrossAxisAlignment.center,
-            //   children: [
-            //buildMaterialButton("",()),
-            //   ],
-            // ),
-            // SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("syncfusion flutter sliders",
+                    syncfusionflutterslidersPage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.center,

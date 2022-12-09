@@ -392,6 +392,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  slider_side_menu:
+    dependency: "direct main"
+    description:
+      name: slider_side_menu
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
   source_span:
     dependency: transitive
     description:
@@ -420,6 +427,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
+  syncfusion_flutter_charts:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_charts
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "20.3.60"
   syncfusion_flutter_core:
     dependency: transitive
     description:
@@ -435,7 +449,7 @@ packages:
     source: hosted
     version: "20.3.60"
   syncfusion_flutter_sliders:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: syncfusion_flutter_sliders
       url: "https://pub.dartlang.org"
