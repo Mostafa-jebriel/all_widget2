@@ -1,3 +1,4 @@
+import 'package:all_widget2/collasable_drawer/screens/home/home_screen.dart';
 import 'package:all_widget2/pdf/main_pdf.dart';
 import 'package:all_widget2/share_widget.dart';
 import 'package:all_widget2/widget/AllWidget.dart';
@@ -145,8 +146,7 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                buildMaterialButton("syncfusion flutter sliders",
-                    syncfusionflutterslidersPage()),
+                buildMaterialButton("CollasableDrawer", CollasableDrawer()),
               ],
             ),
             SizedBox(
