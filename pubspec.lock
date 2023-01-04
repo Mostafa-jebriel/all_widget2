@@ -380,6 +380,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.7"
+  side_menu_animation:
+    dependency: "direct main"
+    description:
+      name: side_menu_animation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   sizer:
     dependency: "direct main"
     description:
@@ -427,6 +434,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
+  syncfusion_flutter_charts:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_charts
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "20.3.60"
   syncfusion_flutter_core:
     dependency: transitive
     description:

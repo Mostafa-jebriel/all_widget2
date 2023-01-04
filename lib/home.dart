@@ -1,6 +1,7 @@
 import 'package:all_widget2/collasable_drawer/screens/home/home_screen.dart';
 import 'package:all_widget2/pdf/main_pdf.dart';
 import 'package:all_widget2/share_widget.dart';
+import 'package:all_widget2/side_menu_animation/side_menu_animation.dart';
 import 'package:all_widget2/widget/AllWidget.dart';
 import 'package:all_widget2/widget/Appbars.dart';
 import 'package:all_widget2/widget/Spinkit.dart';
@@ -147,6 +148,8 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("CollasableDrawer", CollasableDrawer()),
+                buildMaterialButton(
+                    "side menu animation", sideMenuAnimationPage()),
               ],
             ),
             SizedBox(
