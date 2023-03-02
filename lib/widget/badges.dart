@@ -1,6 +1,6 @@
 import 'package:all_widget2/share_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 
 ThemeData _buildTheme() {
   final base = ThemeData.light();
@@ -44,7 +44,7 @@ class _HomeScreenState extends State<BadgesPage> {
   Widget expandedBadge() {
     return Expanded(
       child: Center(
-        child: Badge(
+        child: badges.Badge(
           badgeContent: Text('10'),
           child: Icon(Icons.person, size: 30),
         ),
@@ -53,10 +53,10 @@ class _HomeScreenState extends State<BadgesPage> {
   }
 
   Widget _shoppingCartBadge() {
-    return Badge(
-      position: BadgePosition.topEnd(top: 0, end: 3),
+    return badges.Badge(
+      position: badges.BadgePosition.topEnd(top: 0, end: 3),
       animationDuration: Duration(milliseconds: 300),
-      animationType: BadgeAnimationType.slide,
+      animationType: badges.BadgeAnimationType.slide,
       badgeContent: Text(
         _counter.toString(),
         style: TextStyle(color: Colors.white),
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<BadgesPage> {
   PreferredSizeWidget _tabBar() {
     return TabBar(tabs: [
       Tab(
-        icon: Badge(
+        icon: badges.Badge(
           badgeColor: Colors.blue,
           badgeContent: Text(
             '3',
@@ -78,10 +78,10 @@ class _HomeScreenState extends State<BadgesPage> {
         ),
       ),
       Tab(
-        icon: Badge(
-          shape: BadgeShape.square,
+        icon: badges.Badge(
+          shape: badges.BadgeShape.square,
           borderRadius: BorderRadius.circular(5),
-          position: BadgePosition.topEnd(top: -12, end: -20),
+          position: badges.BadgePosition.topEnd(top: -12, end: -20),
           padding: EdgeInsets.all(2),
           badgeContent: Text(
             'NEW',
@@ -110,9 +110,9 @@ class _HomeScreenState extends State<BadgesPage> {
         ),
         BottomNavigationBarItem(
           label: 'Settings',
-          icon: Badge(
-            shape: BadgeShape.circle,
-            position: BadgePosition.center(),
+          icon: badges.Badge(
+            shape: badges.BadgeShape.circle,
+            position: badges.BadgePosition.center(),
             borderRadius: BorderRadius.circular(100),
             badgeContent: Container(
               height: 5,
@@ -159,7 +159,7 @@ class _HomeScreenState extends State<BadgesPage> {
   Widget _textBadge() {
     return Padding(
       padding: const EdgeInsets.all(20),
-      child: Badge(
+      child: badges.Badge(
         padding: EdgeInsets.all(6),
         gradient: LinearGradient(colors: [
           Colors.black,
@@ -172,14 +172,14 @@ class _HomeScreenState extends State<BadgesPage> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        position: BadgePosition.topStart(top: -15),
+        position: badges.BadgePosition.topStart(top: -15),
         child: Text('This is a text'),
       ),
     );
   }
 
   Widget _elevatedButtonBadge() {
-    return Badge(
+    return badges.Badge(
       showBadge: showElevatedButtonBadge,
       padding: EdgeInsets.all(8),
       badgeColor: Colors.deepPurple,
@@ -222,11 +222,11 @@ class _HomeScreenState extends State<BadgesPage> {
   Widget _getExampleBadge({double? padding}) {
     return Padding(
       padding: const EdgeInsets.all(4),
-      child: Badge(
+      child: badges.Badge(
         badgeColor: Colors.lightBlueAccent,
         borderRadius: BorderRadius.circular(20),
         padding: EdgeInsets.all(padding ?? 4),
-        shape: BadgeShape.square,
+        shape: badges.BadgeShape.square,
         badgeContent: Text(
           'Hello',
           style: TextStyle(color: Colors.white),
@@ -242,10 +242,10 @@ class _HomeScreenState extends State<BadgesPage> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text('Badges with borders:'),
-          Badge(
-            position: BadgePosition.topEnd(top: 0, end: 2),
+          badges.Badge(
+            position: badges.BadgePosition.topEnd(top: 0, end: 2),
             elevation: 0,
-            shape: BadgeShape.circle,
+            shape: badges.BadgeShape.circle,
             badgeColor: Colors.red,
             borderSide: BorderSide(color: Colors.black),
             child: Icon(
@@ -253,9 +253,9 @@ class _HomeScreenState extends State<BadgesPage> {
               size: 30,
             ),
           ),
-          Badge(
-            position: BadgePosition.topEnd(top: -5, end: -5),
-            shape: BadgeShape.square,
+          badges.Badge(
+            position: badges.BadgePosition.topEnd(top: -5, end: -5),
+            shape: badges.BadgeShape.square,
             badgeColor: Colors.blue,
             badgeContent: SizedBox(
               height: 5,
@@ -286,9 +286,9 @@ class _HomeScreenState extends State<BadgesPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Badge(
+              badges.Badge(
                 elevation: 0,
-                shape: BadgeShape.circle,
+                shape: badges.BadgeShape.circle,
                 padding: EdgeInsets.all(7),
                 badgeContent: Text(
                   value,
@@ -330,9 +330,9 @@ class _HomeScreenState extends State<BadgesPage> {
   Widget _directionalBadge() {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12.0),
-      child: Badge(
+      child: badges.Badge(
         elevation: 0,
-        position: BadgePosition.topEnd(),
+        position: badges.BadgePosition.topEnd(),
         padding: EdgeInsetsDirectional.only(end: 4),
         badgeColor: Colors.transparent,
         badgeContent: Icon(Icons.error, size: 16.0, color: Colors.red),
