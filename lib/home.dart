@@ -48,6 +48,10 @@ import 'package:all_widget2/widget2/smooth_sort.dart';
 import 'package:all_widget2/widget2/smooth_star_rating_null_safety.dart';
 import 'package:all_widget2/widget2/ticket_material.dart';
 import 'package:all_widget2/widget2/transformable_list_view.dart';
+import 'package:all_widget2/widget3/bottom_bar_with_sheet.dart';
+import 'package:all_widget2/widget3/icons_plus.dart';
+import 'package:all_widget2/widget3/photo_card_swiper.dart';
+import 'package:all_widget2/widget3/proste_bezier_curve.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'widget/Customerror.dart';
@@ -284,7 +288,19 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("loadmore", loadmore()),
                 buildMaterialButton("reorderable_grid_view", gridViewpage()),
-                buildMaterialButton("smooth_sort ", smoothBody()),
+                buildMaterialButton("bottom bar with sheet ", BaseExample()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("icons_plus", icons_plus_page()),
+                buildMaterialButton("photo_card_swiper", ExamplePageWidget()),
+                buildMaterialButton("proste_bezier_curve", curvepage()),
               ],
             ),
             SizedBox(
