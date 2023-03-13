@@ -65,6 +65,8 @@ dependencies:
   icons_plus: ^4.0.0
   photo_card_swiper: ^0.0.6
   proste_bezier_curve: ^2.0.2
+  glassmorphism: ^3.0.0
+  html:
   side_menu_animation:
   sizer:
 

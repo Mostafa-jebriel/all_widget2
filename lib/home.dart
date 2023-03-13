@@ -49,6 +49,7 @@ import 'package:all_widget2/widget2/smooth_star_rating_null_safety.dart';
 import 'package:all_widget2/widget2/ticket_material.dart';
 import 'package:all_widget2/widget2/transformable_list_view.dart';
 import 'package:all_widget2/widget3/bottom_bar_with_sheet.dart';
+import 'package:all_widget2/widget3/glassmorphism.dart';
 import 'package:all_widget2/widget3/icons_plus.dart';
 import 'package:all_widget2/widget3/photo_card_swiper.dart';
 import 'package:all_widget2/widget3/proste_bezier_curve.dart';
@@ -301,6 +302,14 @@ class _HomeState extends State<Home> {
                 buildMaterialButton("icons_plus", icons_plus_page()),
                 buildMaterialButton("photo_card_swiper", ExamplePageWidget()),
                 buildMaterialButton("proste_bezier_curve", curvepage()),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("glass morphism ", GlassMorphic()),
+
               ],
             ),
             SizedBox(
