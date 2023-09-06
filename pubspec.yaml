@@ -66,6 +66,10 @@ dependencies:
   photo_card_swiper: ^0.0.6
   proste_bezier_curve: ^2.0.2
   glassmorphism: ^3.0.0
+  youtube_player_iframe: ^4.0.4
+  adaptive_action_sheet: ^2.0.2
+  app_settings: ^4.2.0
+  flutter_credit_card: ^3.0.6
   html:
   side_menu_animation:
   sizer:

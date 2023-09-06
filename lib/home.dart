@@ -1,3 +1,4 @@
+import 'package:all_widget2/animated_splash/animated_splash.dart';
 import 'package:all_widget2/collasable_drawer/screens/home/home_screen.dart';
 import 'package:all_widget2/pdf/main_pdf.dart';
 import 'package:all_widget2/share_widget.dart';
@@ -48,11 +49,17 @@ import 'package:all_widget2/widget2/smooth_sort.dart';
 import 'package:all_widget2/widget2/smooth_star_rating_null_safety.dart';
 import 'package:all_widget2/widget2/ticket_material.dart';
 import 'package:all_widget2/widget2/transformable_list_view.dart';
+import 'package:all_widget2/widget3/adaptive_action_sheet.dart';
+import 'package:all_widget2/widget3/animated_search.dart';
+import 'package:all_widget2/widget3/app_settings.dart';
 import 'package:all_widget2/widget3/bottom_bar_with_sheet.dart';
+import 'package:all_widget2/widget3/credit_card.dart';
 import 'package:all_widget2/widget3/glassmorphism.dart';
 import 'package:all_widget2/widget3/icons_plus.dart';
+import 'package:all_widget2/widget3/pencil_loader.dart';
 import 'package:all_widget2/widget3/photo_card_swiper.dart';
 import 'package:all_widget2/widget3/proste_bezier_curve.dart';
+import 'package:all_widget2/widget3/youtube_player_iframe.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'widget/Customerror.dart';
@@ -94,8 +101,6 @@ class _HomeState extends State<Home> {
                 buildMaterialButton("AllWidget", AllWidget()),
                 buildMaterialButton(
                     "Long Press Draggable", LongPressDraggablePage()),
-                buildMaterialButton(
-                    "Reorderable List View ", ReorderableListViewPage()),
               ],
             ),
             SizedBox(
@@ -106,7 +111,18 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton(
+                    "Reorderable List View ", ReorderableListViewPage()),
+                buildMaterialButton(
                     "CupertinoContextMenu", CupertinoContextMenuPage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("table", TablePage()),
                 buildMaterialButton("Stepper", StepperPage()),
               ],
@@ -120,7 +136,6 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("table", Table2()),
                 buildMaterialButton("Transform", TransformPage()),
-                buildMaterialButton("spinkit", SpinkitPage()),
               ],
             ),
             SizedBox(
@@ -130,7 +145,17 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                buildMaterialButton("spinkit", SpinkitPage()),
                 buildMaterialButton("DragTarget", DragTargetPage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("Custom error widget", CustomError()),
                 buildMaterialButton("Get x Animation", GetXAnimation()),
               ],
@@ -144,7 +169,6 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("HeroAnimations", HeroAnimations()),
                 buildMaterialButton("PDF", MainPDF()),
-                buildMaterialButton("Easy Stepper ", EasyStepperPage()),
               ],
             ),
             SizedBox(
@@ -155,6 +179,16 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("Analog Clock ", AnalogClockPage()),
+                buildMaterialButton("Easy Stepper ", EasyStepperPage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("Syncfusion ", SyncfusionPage()),
                 buildMaterialButton("Badges  ", BadgesPage()),
               ],
@@ -168,6 +202,16 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("voice message", ChatPage()),
                 buildMaterialButton("ShapeAppBar", ShapeAppBar()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("JTextDetector ", JTextDetectorExample()),
                 buildMaterialButton("SliderSideMenu", SliderSideMenuPage()),
               ],
             ),
@@ -190,7 +234,6 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                buildMaterialButton("JTextDetector ", JTextDetectorExample()),
                 buildMaterialButton("TicketMaterial ", TicketPage()),
                 buildMaterialButton("TicketMaterial ", MyTicketView()),
               ],
@@ -205,7 +248,6 @@ class _HomeState extends State<Home> {
                 buildMaterialButton(
                     "carousel indicator", carouselindicatorPage()),
                 buildMaterialButton("Animated Icons ", AnimatedIconsPage()),
-                buildMaterialButton("shimmerpage ", shimmerpage()),
               ],
             ),
             SizedBox(
@@ -216,6 +258,16 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("circular reveal", circular_reveal()),
+                buildMaterialButton("shimmerpage ", shimmerpage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("add to cart animation", AddToCart()),
                 buildMaterialButton(
                     "staggered_animations ", staggered_animations()),
@@ -230,14 +282,26 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("List wheel", Listwheel()),
                 buildMaterialButton("shaky animated", shaky_animated()),
-                buildMaterialButton("AnimationListDemo ", AnimationListDemo()),
               ],
+            ),
+            SizedBox(
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("AnimatedList", AnimatedListPage()),
+                buildMaterialButton("AnimationListDemo ", AnimationListDemo()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("Transformable List View", ExampleScreen()),
                 buildMaterialButton("loadingwidget ", loadingwidgetPage()),
               ],
@@ -252,7 +316,6 @@ class _HomeState extends State<Home> {
                 buildMaterialButton(
                     "Searchbar Animation", SearchbarAnimationExample()),
                 buildMaterialButton("Searchable", Searchable()),
-                buildMaterialButton("DotsDecoratorPage ", DotsDecoratorPage()),
               ],
             ),
             SizedBox(
@@ -263,6 +326,16 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("LiquidPull", LiquidPull()),
+                buildMaterialButton("DotsDecoratorPage ", DotsDecoratorPage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("rating_bar", rating_bar()),
                 buildMaterialButton("rating_dialog  ", rating_dialogpage()),
               ],
@@ -277,7 +350,6 @@ class _HomeState extends State<Home> {
                 buildMaterialButton("Custom_Rating", Custom_Rating()),
                 buildMaterialButton(
                     "rating_summary_page", rating_summary_page()),
-                buildMaterialButton("smooth_star  ", smooth_star()),
               ],
             ),
             SizedBox(
@@ -288,6 +360,16 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("loadmore", loadmore()),
+                buildMaterialButton("smooth_star  ", smooth_star()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
                 buildMaterialButton("reorderable_grid_view", gridViewpage()),
                 buildMaterialButton("bottom bar with sheet ", BaseExample()),
               ],
@@ -301,15 +383,60 @@ class _HomeState extends State<Home> {
               children: [
                 buildMaterialButton("icons_plus", icons_plus_page()),
                 buildMaterialButton("photo_card_swiper", ExamplePageWidget()),
-                buildMaterialButton("proste_bezier_curve", curvepage()),
               ],
+            ),
+            SizedBox(
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 buildMaterialButton("glass morphism ", GlassMorphic()),
-
+                buildMaterialButton("youtube player iframe ", YoutubeApp()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("app settings", settings()),
+                buildMaterialButton("adaptive action sheet ", adaptivepage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("animated splash", AnimatedSplash()),
+                buildMaterialButton("credit card", MySample()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("Animated Search", AnimatedSearch()),
+                buildMaterialButton("proste_bezier_curve", curvepage()),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                buildMaterialButton("Pencil Loader", PencilLoaderHome()),
               ],
             ),
             SizedBox(
